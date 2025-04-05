@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tourdbModelStoreContainer" CdmEntityContainer="tourdbEntities">
+    <EntitySetMapping Name="bookings">
+      <EntityTypeMapping TypeName="tourdbModel.booking">
+        <MappingFragment StoreEntitySet="booking">
+          <ScalarProperty Name="TOUR_ID" ColumnName="TOUR_ID" />
+          <ScalarProperty Name="TOUR_NAME" ColumnName="TOUR_NAME" />
+          <ScalarProperty Name="PLACE" ColumnName="PLACE" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tours">
+      <EntityTypeMapping TypeName="tourdbModel.Tour">
+        <MappingFragment StoreEntitySet="Tour">
+          <ScalarProperty Name="TOUR_ID" ColumnName="TOUR_ID" />
+          <ScalarProperty Name="TOUR_NAME" ColumnName="TOUR_NAME" />
+          <ScalarProperty Name="PLACE" ColumnName="PLACE" />
+          <ScalarProperty Name="DAYS" ColumnName="DAYS" />
+          <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+          <ScalarProperty Name="LOCATIONS" ColumnName="LOCATIONS" />
+          <ScalarProperty Name="TOUR_INFO" ColumnName="TOUR_INFO" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfoes">
+      <EntityTypeMapping TypeName="tourdbModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
